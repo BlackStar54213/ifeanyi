@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="desktop">
+            <div class="title">
+                <h1>Registration Form</h1>
+                <p>Please fill in the form below</p>
+            </div>
+            <form>
+                <section class="card" id="card1">
+
+                    <h3>Student Biodata</h3>
+                    <div class="inputs">
+                        <input type="text" id="Firstname" name="First name" required placeholder="First Name">
+                        <input type="text" id="middlename" required placeholder="Middle Name">
+                        <input type="text" id="lastname" required placeholder="Last Name/Surname">
+                    </div>
+                    <div class="gender-radio">
+                        <h4>Gender</h4>
+                        <input type="radio" name="gender" value="male" id="male"> Male
+                        <input type="radio" name="gender" value="female" id="female"> Female
+                    </div>
+                    <div class="dob">
+                        <label for="dob">Date of Birth</label><br>
+                        <input type="date" id="dob" required>
+                    </div>
+
+                    <div class="btn"><a href="#card2">
+                            <button>Next</button></a>
+                    </div>
+                </section>
+
+                <section class="card" id="card2">
+
+                    <h3>Contact Information</h3>
+                    <div class="inputs">
+                        <input type="tel" id="tel" required placeholder="Phone Number">
+                        <input type="tel" id="alttel" required placeholder="Alternative Phone Number">
+                        <input type="email" id="email" required placeholder="Email Address">
+                        <input type="tel" id="ptel" required placeholder="Parent/Guardian Number">
+                    </div>
+
+
+                    <div class="btn">
+                        <a href="#card3">
+                            <button>Next</button></a>
+                        <a href="#card1">
+                            <button class="prev-btn">Previous</button></a>
+                    </div>
+                </section>
+
+
+                <section class="card" id="card3">
+
+                    <h3>Location</h3>
+                    <div class="inputs">
+                        <input type="text" id="res-area" required placeholder="Residential Address">
+                        <input type="text" id="Lga" required placeholder="L.G.A of Origin">
+                        <input type="text" id="state" required placeholder="EState of Origin">
+                        <input type="text" id="country" required placeholder="Country">
+                    </div>
+
+
+                    <div class="btn">
+                        <a href="#card4">
+                            <button>Next</button></a>
+                        <a href="#card2">
+                            <button class="prev-btn">Previous</button></a>
+                    </div>
+                </section>
+
+
+                <section class="card" id="card4">
+
+                    <h3>Academic Information</h3>
+                    <div class="inputs">
+                        <input type="text" id="Faculty" required name="Faculty" placeholder="Faculty">
+                        <input type="text" id="dept" required placeholder="Department">
+                        <input type="number" id="yoe" required placeholder="Year Of Entry">
+                        <input type="number" id="yog" required placeholder="Year Of Graduation">
+                        <input type="text" id="Programme" required placeholder="Programme">
+                        <input type="text" id="mod" required placeholder="Mode of Entry">
+                    </div>
+
+
+                    <div class="btn">
+                        <a href="#card3">
+                            <button class="prev-btn">Previous</button></a>
+                    </div>
+                </section>
+                <button id="sub-btn" type="submit">SUBMIT</button>
+            </form>
+
+        </div>
+        <div class="mobile">
+
+
+            <form>
+                <section class="mcard" id="mcard1">
+                    <div class="title">
+                        <img src="/images/mobile img.png" alt="">
+                        <h1>Registration Form</h1>
+                        <p>Please fill in the form below</p>
+                    </div>
+                    <div class="white">
+                        <h3>Student Biodata</h3>
+                        <div class="inputs">
+                            <input type="text" id="Firstname" required placeholder="First Name">
+                            <input type="text" id="middlename" required placeholder="Middle Name">
+                            <input type="text" id="lastname" required placeholder="Last Name/Surname">
+                        </div>
+                        <div class="gender-radio">
+                            <h4>Gender</h4>
+                            <input type="radio" name="gender" value="male" id="male"> Male
+                            <input type="radio" name="gender" value="female" id="female"> Female
+                        </div>
+                        <div class="dob">
+                            <label for="dob">Date of Birth</label><br>
+                            <input type="date" id="dob" required>
+                        </div>
+                    </div>
+
+                    <div class="btn"><a href="#card2">
+                            <button>Next</button></a>
+                    </div>
+
+                    <div class="mobile-btn">
+                        <input type="button" value="Next" class="nav-btn" onclick="nextCard()" id="fnext">
+                    </div>
+                </section>
+
+                <section class="mcard" id="mcard2">
+                    <div class="title">
+                        <img src="/images/mobile img.png" alt="">
+                        <h1>Registration Form</h1>
+                        <p>Please fill in the form below</p>
+                    </div>
+                    <div class="white">
+                        <h3>Contact Information</h3>
+                        <div class="inputs">
+                            <input type="tel" id="tel" required placeholder="Phone Number">
+                            <input type="tel" id="alttel" required placeholder="Alternative Phone Number">
+                            <input type="email" id="email" required placeholder="Email Address">
+                            <input type="tel" id="ptel" required placeholder="Parent/Guardian Number">
+                        </div>
+                    </div>
+
+
+
+                    <div class="mobile-btn">
+                        <img src="/images/icon-angle-left.svg" alt="" class="nav-btn" onclick="prevCard()">
+                        <img src="/images/icon-angle-right.svg" alt="" class="nav-btn" onclick="nextCard()" id="next">
+                    </div>
+                </section>
+
+
+                <section class="mcard" id="mcard3">
+                    <div class="title">
+                        <img src="/images/mobile img.png" alt="">
+                        <h1>Registration Form</h1>
+                        <p>Please fill in the form below</p>
+                    </div>
+                    <div class="white">
+
+                        <h3>Location</h3>
+                        <div class="inputs">
+                            <input type="text" id="res-area" required placeholder="Residential Address">
+                            <input type="text" id="Lga" required placeholder="L.G.A of Origin">
+                            <input type="text" id="state" required placeholder="EState of Origin">
+                            <input type="text" id="country" required placeholder="Country">
+                        </div>
+                    </div>
+
+                    <div class="mobile-btn">
+                        <img src="/images/icon-angle-left.svg" alt="" class="nav-btn" onclick="prevCard()">
+                        <img src="/images/icon-angle-right.svg" alt="" class="nav-btn" onclick="nextCard()" id="next">
+                    </div>
+                </section>
+
+
+                <section class="mcard" id="mcard4">
+                    <div class="title">
+                        <img src="/images/mobile img.png" alt="">
+                        <h1>Registration Form</h1>
+                        <p>Please fill in the form below</p>
+                    </div>
+                    <div class="white">
+                        <h3>Academic Information</h3>
+                        <div class="inputs">
+                            <input type="text" id="Faculty" required name="Faculty" placeholder="Faculty">
+                            <input type="text" id="dept" required placeholder="Department">
+                            <input type="number" id="yoe" required placeholder="Year Of Entry">
+                            <input type="number" id="yog" required placeholder="Year Of Graduation">
+                            <input type="text" id="Programme" required placeholder="Programme">
+                            <input type="text" id="mod" required placeholder="Mode of Entry">
+
+                        </div>
+                    </div>
+
+
+                    <div class="mobile-btn">
+                        <img src="/images/icon-angle-left.svg" alt="" class="nav-btn" onclick="prevCard()">
+                        <img src="/images/icon-angle-right.svg" alt="" class="nav-btn" onclick="nextCard()" id="next">
+                    </div>
+
+                </section>
+
+
+                <section class="mcard" id="mcard5">
+                    <div class="title">
+                        <img src="/images/mobile img.png" alt="">
+                        <h1>Registration Form</h1>
+                        <p>Please fill in the form below</p>
+                    </div>
+                    <p>Please Upload your picture here</p>
+                    <div>
+                        <img src="/images/image.png" alt="" class="image">
+                    </div>
+
+                    <div class="uploadmethod">
+                        <div class="smartphone">
+                            <img src="/images/sm" alt="">
+                            <p>Upload from device</p>
+                        </div>
+                        <div class="camera">
+                            <img src="/images/camera.png" alt="">
+                            <p>Take Photo</p>
+                        </div>
+                    </div>
+
+                    <div class="mobile-btn">
+                        <img src="/images/icon-angle-left.svg" alt="" class="nav-btn" onclick="prevCard()">
+                        <img src="/images/icon-angle-right.svg" alt="" class="nav-btn" onclick="nextCard()" id="next">
+                    </div>
+                </section>
+
+
+                <section class="mcard" id="mcard6">
+                    <h1>Almost there</h1>
+                    <img src="/images/check-circle.png" alt="">
+                    <p>Picture Uploaded</p>
+
+                    <input type="submit" id="finalsumbit">
+                </section>
+        </div>
+        </form>
+    </main>
+</body>
+<script src="index.js">
+    document.addEventListener('DOMContentLoaded', media)
+</script>
+
+</html>

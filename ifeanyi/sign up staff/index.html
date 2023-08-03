@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="desktop">
+            <div class="title">
+                <h1>Registration Form</h1>
+                <p>Please fill in the form below</p>
+            </div>
+            <form>
+                <section class="card" id="card1">
+
+                    <h3>Staff Biodata</h3>
+                    <div class="inputs">
+                        <input type="text" id="Firstname" name="First name" required placeholder="First Name">
+                        <input type="text" id="middlename" required placeholder="Middle Name">
+                        <input type="text" id="lastname" required placeholder="Last Name/Surname">
+                    </div>
+                    <div class="gender-radio">
+                        <h4>Gender</h4>
+                        <input type="radio" name="gender" value="male" id="male"> Male
+                        <input type="radio" name="gender" value="female" id="female"> Female
+                    </div>
+                    <div class="gender-radio">
+                        <h4>Status</h4>
+                        <input type="radio" name="Status" value="Married" id="male"> Married
+                        <input type="radio" name="Status" value="Single" id="female"> Single
+                    </div>
+                    <div class="dob">
+                        <label for="dob">Date of Birth</label><br>
+                        <input type="date" id="dob" required>
+                    </div>
+
+                    <div class="btn"><a href="#card2">
+                            <button>Next</button></a>
+                    </div>
+                </section>
+
+                <section class="card" id="card2">
+
+                    <h3>Contact Information</h3>
+                    <div class="inputs">
+                        <input type="tel" id="tel" required placeholder="Phone Number">
+                        <input type="tel" id="alttel" required placeholder="Alternative Phone Number">
+                        <input type="email" id="email" required placeholder="Email Address">
+                    </div>
+
+
+                    <div class="btn">
+                        <a href="#card3">
+                            <button>Next</button></a>
+                        <a href="#card1">
+                            <button class="prev-btn">Previous</button></a>
+                    </div>
+                </section>
+
+
+                <section class="card" id="card3">
+
+                    <h3>Location</h3>
+                    <div class="inputs">
+                        <input type="text" id="res-area" required placeholder="Residential Address" style="width: 80%;">
+                        <div class="location">
+                            <input type="text" class="locate" placeholder="L.G.A of Origin" required>
+                            <div class="dropdown-content">
+                                <a href="#">Abraka, Delta State</a><br>
+                                <a href="#">Link 2</a><br>
+                                <a href="#">Link 3</a><br>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <input type="text" class="locate" placeholder="State" required>
+                            <div class="dropdown-content">
+                                <a href="#">Abraka, Delta State</a><br>
+                                <a href="#">Link 2</a><br>
+                                <a href="#">Link 3</a><br>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <input type="text" class="locate" placeholder="Country" required>
+                            <div class="dropdown-content">
+                                <a href="#">Abraka, Delta State</a><br>
+                                <a href="#">Link 2</a><br>
+                                <a href="#">Link 3</a><br>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="btn">
+                        <a href="#card4">
+                            <button>Next</button></a>
+                        <a href="#card2">
+                            <button class="prev-btn">Previous</button></a>
+                    </div>
+                </section>
+
+
+                <section class="card" id="card4">
+
+                    <h3>Employment Information</h3>
+                    <div class="inputs">
+                        <div class="location">
+                            <input type="text" class="locate" placeholder="Faculty" required>
+                            <div class="dropdown-content">
+                                <a href="#">Abraka, Delta State</a><br>
+                                <a href="#">Link 2</a><br>
+                                <a href="#">Link 3</a><br>
+                            </div>
+                        </div>
+                        <div class="location" id="gag">
+                            <input type="text" class="locate" placeholder="Department" required>
+                            <div class="dropdown-content">
+                                <a href="#">Abraka, Delta State</a><br>
+                                <a href="#">Link 2</a><br>
+                                <a href="#">Link 3</a><br>
+                            </div>
+                        </div>
+                        <input type="number" id="yoe" required placeholder="Date registered">
+                        <input type="number" id="yog" required placeholder="Employment Status">
+                        <input type="text" id="Programme" required placeholder="Category">
+                        <div class="location">
+                            <input type="text" class="locate" placeholder="Grade Level" required>
+                            <div class="dropdown-content">
+                                <a href="#">Abraka, Delta State</a><br>
+                                <a href="#">Link 2</a><br>
+                                <a href="#">Link 3</a><br>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="btn">
+                        <a href="#card3">
+                            <button class="prev-btn">Previous</button></a>
+                    </div>
+                </section>
+
+                <section class="card" id="card3">
+
+                    <h3>Bank Account Information</h3>
+                    <div class="inputs">
+                        <input type="text" id="res-area" required placeholder="Account Name" style="width: 80%;">
+                        <div class="location">
+                            <input type="text" class="locate" placeholder="Bank Name" required>
+                            <div class="dropdown-content">
+                                <p href="#">Abraka, Delta State</p><br>
+                                <p href="#">Link 2</p><br>
+                                <p href="#">Link 3</p><br>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <input type="text" class="locate" placeholder="Account Number" required>
+                            <div class="dropdown-content">
+                                <a href="#">Abraka, Delta State</a><br>
+                                <a href="#">Link 2</a><br>
+                                <a href="#">Link 3</a><br>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <input type="text" class="locate" placeholder="Account Type" required>
+                            <div class="dropdown-content">
+                                <a href="#">Abraka, Delta State</a><br>
+                                <a href="#">Link 2</a><br>
+                                <a href="#">Link 3</a><br>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="btn">
+                        <a href="#card4">
+                            <button>Next</button></a>
+                        <a href="#card2">
+                            <button class="prev-btn">Previous</button></a>
+                    </div>
+                </section>
+                <button id="sub-btn" type="submit">SUBMIT</button>
+            </form>
+
+        </div>
+        <div class="mobile">
+
+
+            <form>
+                <section class="mcard" id="mcard1">
+                    <div class="title">
+                        <img src="/images/mobile img.png" alt="">
+                        <h1>Registration Form</h1>
+                        <p>Please fill in the form below</p>
+                    </div>
+                    <div class="white">
+                        <h3>Staff Biodata</h3>
+                        <div class="inputs">
+                            <input type="text" id="Firstname" required placeholder="First Name">
+                            <input type="text" id="middlename" required placeholder="Middle Name">
+                            <input type="text" id="lastname" required placeholder="Last Name/Surname">
+                        </div>
+                        <div class="gender-radio">
+                            <h4>Gender</h4>
+                            <input type="radio" name="gender" value="male" id="male"> Male
+                            <input type="radio" name="gender" value="female" id="female"> Female
+                        </div>
+                        <div class="gender-radio">
+                            <h4>Status</h4>
+                            <input type="radio" name="Status" value="Married" id="male"> Married
+                            <input type="radio" name="Status" value="Single" id="female"> Single
+                        </div>
+                        <div class="dob">
+                            <label for="dob">Date of Birth</label><br>
+                            <input type="date" id="dob" required>
+                        </div>
+                    </div>
+
+                    <div class="btn"><a href="#card2">
+                            <button>Next</button></a>
+                    </div>
+
+                    <div class="mobile-btn">
+                        <input type="button" value="Next" class="nav-btn" onclick="nextCard()" id="fnext">
+                    </div>
+                </section>
+
+                <section class="mcard" id="mcard2">
+                    <div class="title">
+                        <img src="/images/mobile img.png" alt="">
+                        <h1>Registration Form</h1>
+                        <p>Please fill in the form below</p>
+                    </div>
+                    <div class="white">
+                        <h3>Contact Information</h3>
+                        <div class="inputs">
+                            <input type="tel" id="tel" required placeholder="Phone Number">
+                            <input type="tel" id="alttel" required placeholder="Alternative Phone Number">
+                            <input type="email" id="email" required placeholder="Email Address">
+                        </div>
+                    </div>
+
+
+
+                    <div class="mobile-btn">
+                        <img src="/images/icon-angle-left.svg" alt="" class="nav-btn" onclick="prevCard()">
+                        <img src="/images/icon-angle-right.svg" alt="" class="nav-btn" onclick="nextCard()" id="next">
+                    </div>
+                </section>
+
+
+                <section class="mcard" id="mcard3">
+                    <div class="title">
+                        <img src="/images/mobile img.png" alt="">
+                        <h1>Registration Form</h1>
+                        <p>Please fill in the form below</p>
+                    </div>
+                    <div class="white">
+
+                        <h3>Location</h3>
+                        <div class="inputs">
+                            <input type="text" id="res-area" required placeholder="Residential Address">
+                            <input type="text" id="Lga" required placeholder="L.G.A of Origin">
+                            <input type="text" id="country" required placeholder="Country">
+                        </div>
+                    </div>
+
+                    <div class="mobile-btn">
+                        <img src="/images/icon-angle-left.svg" alt="" class="nav-btn" onclick="prevCard()">
+                        <img src="/images/icon-angle-right.svg" alt="" class="nav-btn" onclick="nextCard()" id="next">
+                    </div>
+                </section>
+
+
+                <section class="mcard" id="mcard4">
+                    <div class="title">
+                        <img src="/images/mobile img.png" alt="">
+                        <h1>Registration Form</h1>
+                        <p>Please fill in the form below</p>
+                    </div>
+                    <div class="white">
+                        <h3>Employment Information</h3>
+                        <div class="inputs">
+                            <input type="text" id="Faculty" required name="Faculty" placeholder="Faculty">
+                            <input type="text" id="dept" required placeholder="Department">
+                            <input type="number" id="yoe" required placeholder="Date registered">
+                            <input type="number" id="yog" required placeholder="Employment Status">
+                            <input type="text" id="Programme" required placeholder="Category">
+                            <input type="text" id="mod" required placeholder="Grade Level">
+
+                        </div>
+                    </div>
+
+
+                    <div class="mobile-btn">
+                        <img src="/images/icon-angle-left.svg" alt="" class="nav-btn" onclick="prevCard()">
+                        <img src="/images/icon-angle-right.svg" alt="" class="nav-btn" onclick="nextCard()" id="next">
+                    </div>
+
+                </section>
+
+
+                <section class="mcard" id="mcard5">
+                    <div class="title">
+                        <img src="/images/mobile img.png" alt="">
+                        <h1>Registration Form</h1>
+                        <p>Please fill in the form below</p>
+                    </div>
+                    <p>Please Upload your picture here</p>
+                    <div>
+                        <img src="/images/image.png" alt="" class="image">
+                    </div>
+
+                    <div class="uploadmethod">
+                        <div class="smartphone">
+                            <img src="/images/smartphone.png" alt="">
+                            <p>Upload from device</p>
+                        </div>
+                        <div class="camera">
+                            <img src="/images/camera.png" alt="">
+                            <p>Take Photo</p>
+                        </div>
+                    </div>
+
+                    <div class="mobile-btn">
+                        <img src="/images/icon-angle-left.svg" alt="" class="nav-btn" onclick="prevCard()">
+                        <img src="/images/icon-angle-right.svg" alt="" class="nav-btn" onclick="nextCard()" id="next">
+                    </div>
+                </section>
+
+
+                <section class="mcard" id="mcard6">
+                    <h1>Almost there</h1>
+                    <img src="/images/check-circle.png" alt="">
+                    <p>Picture Uploaded</p>
+
+                    <input type="submit" id="finalsumbit">
+                </section>
+        </div>
+        </form>
+    </main>
+</body>
+<script src="index.js">
+    document.addEventListener('DOMContentLoaded', media)
+</script>
+
+</html>

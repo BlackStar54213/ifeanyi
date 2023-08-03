@@ -1,0 +1,349 @@
+@media only screen and (min-width:950px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    main {
+        display: flex;
+        background-color: #E9F6FF;
+        flex-direction: row;
+        font-family: 'raleway';
+        color: #35598F;
+
+    }
+
+    .desktop {
+        display: flex;
+        background-color: #E9F6FF;
+        flex-direction: row;
+        font-family: 'raleway';
+        color: #35598F;
+        width: 100%;
+    }
+
+    .left {
+        width: 50%;
+        height: fit-content;
+    }
+
+    .right {
+        width: 50%;
+        padding-top: 140px;
+        text-align: center;
+    }
+
+    .welcome {
+        margin-top: -60px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .register {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .top {
+        width: 100%;
+    }
+
+    .down {
+        margin-top: -130px;
+    }
+
+    .things {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        justify-content: space-evenly;
+    }
+
+
+    h1 {
+        font-size: 40px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        color: #0C1350;
+    }
+
+    .right input {
+        padding: 10px;
+        margin: 20px;
+        width: 370px;
+        border-radius: 5px;
+        border: none;
+        background-color: white;
+        outline: none;
+        font-size: 17px;
+        border-bottom: 2px solid gray;
+    }
+
+    form {
+        margin-top: 50px;
+    }
+
+    form button {
+        width: 130px;
+        height: 50px;
+        background-color: #0C1350;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    a {
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+
+    .numbers {
+        display: flex;
+        column-gap: 40px;
+        margin-top: 19px;
+    }
+
+    label {
+        font-weight: 600;
+    }
+
+    .contact {
+        text-align: left;
+        margin-left: 15%;
+        margin-top: 130px;
+    }
+
+    .contact img {
+        height: 25px;
+    }
+
+    .welcome img {
+        width: 60%;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:951px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    main {
+        display: flex;
+        background-color: #E9F6FF;
+        flex-direction: row;
+        font-family: 'raleway';
+        color: #35598F;
+
+    }
+
+    .desktop {
+        display: flex;
+        background-color: #E9F6FF;
+        flex-direction: row;
+        font-family: 'raleway';
+        color: #35598F;
+        width: 100%;
+    }
+
+    .left {
+        width: 50%;
+        height: fit-content;
+    }
+
+    .right {
+        width: 50%;
+        padding-top: 140px;
+        text-align: center;
+    }
+
+    .welcome {
+        margin-top: -60px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .register {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .top {
+        width: 100%;
+    }
+
+    .down {
+        margin-top: -130px;
+    }
+
+    .things {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        justify-content: space-evenly;
+    }
+
+
+    h1 {
+        font-size: 40px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        color: #0C1350;
+    }
+
+    .right input {
+        padding: 10px;
+        margin: 20px;
+        width: 370px;
+        border-radius: 5px;
+        border: none;
+        background-color: white;
+        outline: none;
+        font-size: 17px;
+        border-bottom: 2px solid gray;
+    }
+
+    form {
+        margin-top: 50px;
+    }
+
+    form button {
+        width: 130px;
+        height: 50px;
+        background-color: #0C1350;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    a {
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+
+    .numbers {
+        display: flex;
+        column-gap: 40px;
+        margin-top: 19px;
+    }
+
+    label {
+        font-weight: 600;
+    }
+
+    .contact {
+        text-align: left;
+        margin-left: 15%;
+        margin-top: 130px;
+    }
+
+    .contact img {
+        height: 25px;
+    }
+
+    .welcome img {
+        width: 60%;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .right,
+    .left {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    * {
+        background-color: #E9F6FF;
+    }
+
+    .mobile {
+        width: 100%;
+        font-family: 'Montserrat';
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .mobilebg {
+        margin-left: 30px;
+    }
+
+    img {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    input {
+        width: 80%;
+        padding: 15px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: white;
+    }
+
+    .mheader h1 {
+        margin-top: -140px;
+        font-size: 30px;
+        color: #0C1350;
+    }
+
+    .mheader p {
+        font-size: 20px;
+        color: #35598F;
+    }
+
+    label {
+        font-size: 12px;
+        display: inline-block;
+    }
+
+    .radio {
+        display: flex;
+        justify-content: space-around;
+        float: left;
+        margin: 0%;
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    form button {
+        margin: 0%;
+        margin-top: 100px;
+        width: 300px;
+    }
+
+    .mregister {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
